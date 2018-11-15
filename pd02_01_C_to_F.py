@@ -1,16 +1,21 @@
-imie = input("Jak masz na imię? ")
-imie = imie.strip(' ')
-dlugosc_imienia = len(imie)
-#ostatnia_litera_imienia = imie[dlugosc_imienia-1]
-#print(imie[-1:])
-ostatnia_litera_imienia = imie[-1:]
-#[0:3] - z lewej strony przedział zamknięty (włącznie), z prawej otwarty (wyłącznie).
-print("Cześć, " + str(imie).capitalize() + ".")
-#print(imie[0].upper())
-#print(imie[1].upper())
-#print(imie[2].upper())
-#print(imie[3].upper())
-#print(imie[4].upper())
-#print("Twoje imię ma " + str(dlugosc_imienia) + " znaków, a ostatnia litera Twojego imienia to " + str(imie[dlugosc_imienia-1]) + ".")
-print("Twoje imię ma " + str(dlugosc_imienia) + " znaków, a ostatnia litera Twojego imienia to " + str(ostatnia_litera_imienia) + ".")
-#print("Twoja ostatnia litera imienia to " + str(imie[4]) + ".")
+#Zamiana stopni Celsjusza na stopnie Fahrenhaita
+intro = "Zamiana stopni Celsjusza na stopnie Fahrenheita"
+wzor_descr = "Posłużymy się następującym wzorem [ºF]=[ºC]*9/5+32"
+print("")
+print(intro.upper())
+print(wzor_descr)
+print("")
+temp_C = input("Podaj wartośc temperatury w stopniach Celsjusza: ")
+temp_F = float(temp_C)*9/5+32
+temp_F_2 = format(temp_F, '.2f')
+print("Temperatura w skali Fahrenheita: " + str(temp_F) + "ºF")
+print("Temperatura w skali Fahrenheita, z dokładnością do drugiego miejsca po przecinku: " + str(temp_F_2) + "ºF")
+print("")
+decyzja = input("Czy chcesz powtórzyć przeliczenie? [T/N]: ")
+decyzja = decyzja.capitalize()
+if (decyzja == 'T'):
+    print("Jeszcze nie wiem jak to zapętlić...")
+elif (decyzja == 'N'):
+    print("Bye!")
+else:
+    print("Bezsensowna odpowiedź, bye!")
