@@ -5,6 +5,7 @@ print("[1] Konwersja °F->°C")
 print("[2] Konwersja °C->°F")
 print("[3] Obliczenie pola koła")
 option = input("")
+
 if (option == "1"):
     #Zamiana stopni Celsjusza na stopnie Fahrenhaita
     print("")
