@@ -1,6 +1,10 @@
 import math
 print("Różne obliczenia".upper())
-option=input("Wybierz opcję [1] Konwersja °F->°C [2] Konwersja °C->°F [3] Obliczenie pola koła: ")
+print("Wybierz opcję")
+print("[1] Konwersja °F->°C")
+print("[2] Konwersja °C->°F")
+print("[3] Obliczenie pola koła")
+option = input("")
 if (option == "1"):
     #Zamiana stopni Celsjusza na stopnie Fahrenhaita
     print("")
@@ -20,6 +24,7 @@ if (option == "1"):
         print("Bye!")
     else:
         print("Bezsensowna odpowiedź, bye!")
+
 elif (option == '2'):
     #Zamiana stopni Fahrenheita na stopnie Celsjusza
     print("")
@@ -39,10 +44,11 @@ elif (option == '2'):
         print("Bye!")
     else:
         print("Bezsensowna odpowiedź, bye!")
+
 elif (option == '3'):
     # Obliczenie pola koła
     print("")
-    print("Obliczenie pola koła o zadanym promieniu (r)".upper())
+    print("Obliczenie pola koła o zadanym promieniu".upper() + " (r)")
     print("Posłużymy się następującym wzorem A = Pi x r x r")
     rad = input("Podaj promień koła: ")
     area = math.pi*float(rad)*float(rad)
@@ -57,6 +63,7 @@ elif (option == '3'):
         print("Bye!")
     else:
         print("Bezsensowna odpowiedź, bye!")
+
 else:
     print("")
     print("Nie ma takiej opcji ani możliwości zapętlenia, uruchom program jeszcze raz.")
