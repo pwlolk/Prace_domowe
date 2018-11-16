@@ -7,3 +7,5 @@ while True:
     print("Pierwsza cyfra: " + str(first_digit))
     print("Ostatnia cyfra: " + str(last_digit))
     print("")
+#Pewnie tutaj moznaby jeszcze kobinować z warunkami czy podane wyrażenie jest liczbą,
+#bo słowa i w ogóle wsszystkie ciągi znaków są traktowane tak samo.
