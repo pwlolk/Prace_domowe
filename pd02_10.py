@@ -1,4 +1,6 @@
-# Latami przestępnymi są te, których numeracja jest podzielna przez 4 i niepodzielna przez 100.
+# latami przestępnymi są te, których numeracja:
+# # jest podzielna przez 4 i niepodzielna przez 100 lub
+# jest podzielna przez 400.
 
 print("Sprawdzenie czy dany rok jest przestępny".upper())
 current_year = 2018
@@ -6,6 +8,7 @@ while True:
     year = input("Który rok sprawdzić? ")
     year_by_4   = (int(year) / 4)
     year_by_100 = (int(year) / 100)
+    year_by_400 = (int(year) / 400)
     if ((year_by_4) - int(year_by_4) == 0):
         condition_by_4 = 1
     else:
@@ -14,7 +17,11 @@ while True:
         condition_by_100 = 0
     else:
         condition_by_100 = 1
-    if (condition_by_4 == 1 and condition_by_100 == 1):
+    if ((year_by_400) - int(year_by_400) == 0):
+        condition_by_400 = 1
+    else:
+        condition_by_400 = 0
+    if ((condition_by_4 == 1 and condition_by_100 == 1) or (condition_by_400 == 1)):
         if(int(year) < current_year):
             print("Rok " + str(year) + " BYŁ rokiem przestępnym.")
             print("")
