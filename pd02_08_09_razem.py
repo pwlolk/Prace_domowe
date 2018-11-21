@@ -27,6 +27,7 @@
 #         print("Liczba " + str(number) + " " + str(statement_by_3) + " podzielna przez 3, " + str(statement_by_5) + " podzielna przez 5 i " + str(statement_by_7) + " podzielna przez 7.")
 #         print ("")
 
+#Wersja druga i lepsza
 print("Sprawdzenie czy zadana liczba całkowita jest podzielna przez 3, 5 lub 7.".upper())
 while True:
     number = int(input("Podaj liczbę całkowitą: "))
