@@ -1,6 +1,6 @@
 # Wiek psa
 
-print("obliczanie wieku psa \n".upper())
+print('obliczanie "prawdziwego" wieku psa \n'.upper())
 
 while True:
     dogs_human_years = int(input("Ile pełnych lat ma pies? "))
