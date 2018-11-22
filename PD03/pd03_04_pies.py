@@ -10,4 +10,4 @@ while True:
     if (dogs_human_months_only <= 24):
         print('"Prawdziwy" wiek psa to ' + str(format(float(dogs_human_months_only*10.5/12), '.2f')) + ' lat.\n')
     else:
-        print('"Prawdziwy" wiek psa to ' + str(format(float(2+(dogs_human_months_only*4.5/12)), '.2f')) + ' lat.\n')
+        print('"Prawdziwy" wiek psa to ' + str(format(float(21+((dogs_human_months_only-24)*4.5/12)), '.2f')) + ' lat.\n')
