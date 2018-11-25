@@ -11,7 +11,7 @@ while (row_current <= rows_total):
     row_current = row_current + 1
 print('')
 
-# Wersja "Krzywa choinka"
+# Wersja "Krzywa choinka" :o)
 # rows_total = int(input("Podaj wysokość piramidy [ilość poziomów]: "))
 # row_current = 1
 # while (row_current <= rows_total):
