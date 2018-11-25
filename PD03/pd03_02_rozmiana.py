@@ -2,10 +2,10 @@
 
 print("Wymiana/zamiana określonej kwoty na bilon \n".upper())
 
-list_coins = [5,2,1,0.50,0.20,0.10,0.05,0.02,0.01]
+list_coins = (5,2,1,0.50,0.20,0.10,0.05,0.02,0.01)
 list_quantity = [0,0,0,0,0,0,0,0,0]
 
-amount = float(input("Podaj kwotę do zamiany (w formacie ZZ.GG): "))
+amount = float(input('Podaj kwotę do zamiany (w formacie złote.grosze): '))
 
 index = 0
 while (index < 9):
