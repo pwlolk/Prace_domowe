@@ -1,4 +1,4 @@
-# Rozmiana kasy (poprawka)
+# Rozmiana kasy (poprawka, bo w wersji z groszami dziesiętnymi gdzieś fikały 0)
 
 list_coins = (500,200,100,50,20,10,5,2,1)
 list_quantity = [0,0,0,0,0,0,0,0,0]
