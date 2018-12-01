@@ -1,4 +1,4 @@
-# Próba integracji kilku poprzednich zadań
+# Próba integracji kilku poprzednich zadań #
 
 import math
 
