@@ -20,7 +20,7 @@ while (print_index < 9):
     print(str(int(list_coins[print_index])) + ' gr:\t' + str(list_quantity[print_index]))
     print_index = print_index + 1
 
-# # Rozmiana kasy
+# Rozmiana kasy
 
 # print("Wymiana/zamiana określonej kwoty na bilon \n".upper())
 
