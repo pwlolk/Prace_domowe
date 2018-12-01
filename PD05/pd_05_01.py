@@ -5,7 +5,7 @@ with open("a.txt", "a+") as file:
 # Zliczenie znaków w tekście
 number_of_letters = len(single_string)-4
 for i,znaki in enumerate(single_string):
-    if (single_string[i] == "." and single_string[i+1] == "\\" and single_string[i+2] == "n"): # break line'y
+    if (single_string[i] == "." and single_string[i+1] == "\\" and single_string[i+2] == "n"): # bo break line'y generują 5 dodatkowych znaków
         number_of_letters = number_of_letters - 5
 print("Liczba znaków w tekście: " + str(number_of_letters))
 
@@ -16,7 +16,7 @@ for i,znaki in enumerate(single_string):
         dots_spaces = dots_spaces + 1
     if (single_string[i] == "." and single_string[i+1] == "'"): # koniec tekstu
         dots_spaces = dots_spaces + 1
-    if (single_string[i] == "." and single_string[i+1] == "\\" and single_string[i+2] == "n"): # break line'y
+    if (single_string[i] == "." and single_string[i+1] == "\\" and single_string[i+2] == "n"): # breakline'y
         dots_spaces = dots_spaces + 1
 print("Liczba zdań w tekście: " + str(dots_spaces))
 
