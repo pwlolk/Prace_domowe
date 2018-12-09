@@ -31,9 +31,12 @@ def words(txt_file):
         file.seek(0)
         single_string = str(file.readlines())
     spaces = 0
-    for i,znaki in enumerate(single_string):
-        if (single_string[i] == " "):
+    # for i,znaki in enumerate(single_string):
+    #     if (single_string[i] == " "):
+    for znak in single_string:
+        if (znak == " "):
             spaces = spaces+1
+    print(single_string)
     return spaces
 
 def characters_analyzed_counter(): #Wykonanie co najmniej jednej statystyki powinno podbijać licznik,
